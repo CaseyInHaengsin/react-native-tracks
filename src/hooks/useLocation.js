@@ -23,8 +23,9 @@ export default (shouldTrack, callback) => {
         }
       };
       useEffect(() => {
+        console.log('hi')
         if(shouldTrack){
-          startWatching()
+           startWatching()
         }else{
           subscriber.remove()
           setSubscriber(null);
